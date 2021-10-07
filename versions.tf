@@ -4,7 +4,7 @@ terraform {
       organization = "byrne-team"
 
       workspaces {
-        name = "dannahforcitycouncilcom-terraform"
+        name = "dannahforcitycouncil_com"
       }
   }
 
