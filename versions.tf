@@ -1,5 +1,15 @@
 terraform {
-  required_version = ">= 0.13"
+  backend "remote" {
+    hostname     = "app.terraform.io"
+      organization = "byrne-team"
+
+      workspaces {
+        name = "dannahforcitycouncilcom-terraform"
+      }
+  }
+
+  required_version = ">= 1.0.8"
+
   required_providers {
     dnsimple = {
       source  = "dnsimple/dnsimple"
