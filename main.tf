@@ -1,14 +1,14 @@
 resource "dnsimple_zone_record" "dannahforcitycouncil-com" {
   zone_name = "dannahforcitycouncil.com"
   name      = ""
-  type      = "alias"
+  type      = "ALIAS"
   value     = "dannahforcitycouncil-com.netlify.app"
 }
 
 resource "dnsimple_zone_record" "www-dannahforcitycouncil-com" {
   zone_name = "dannahforcitycouncil.com"
   name      = "www"
-  type      = "cname"
+  type      = "CNAME"
   value     = "dannahforcitycouncil-com.netlify.app"
 }
 
